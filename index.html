@@ -1,214 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!doctype html>
+<html lang="en" data-theme="dark">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vikas Kumar | Data Analyst & Data Engineer</title>
-
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Portfolio of Vikas Kumar — Data Analyst, BI Developer and Data Engineer focused on Power BI, SQL, Python, Microsoft Fabric, Databricks, data integration and automation.">
+<title>Vikas Kumar — Data Analyst | BI | Data Engineering</title>
 <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+:root{--bg:#0B1220;--surface:#111C2E;--surface2:#16243A;--text:#F1F5F9;--muted:#94A3B8;--line:#243244;--accent:#38BDF8;--accent2:#22D3EE;--max:1100px;--radius:16px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.16;background-image:linear-gradient(rgba(56,189,248,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(56,189,248,.07) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(#000,transparent 82%)}a{color:inherit;text-decoration:none}.container{width:min(calc(100% - 48px),var(--max));margin:auto}.site-header{position:sticky;top:0;z-index:20;border-bottom:1px solid transparent;transition:.3s;background:#0B1220dd;backdrop-filter:blur(14px)}.site-header.scrolled{border-color:var(--line);box-shadow:0 8px 30px #02061788}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;gap:11px;align-items:center;font-size:.95rem}.brand span{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--accent);color:#17200f;font-weight:800}.nav-links{display:flex;align-items:center;gap:25px;color:var(--muted);font-size:.86rem}.nav-links a:hover,.footer a:hover{color:var(--accent)}button{font:inherit}.theme-toggle,.menu-toggle,.lang-button{border:0;background:none;color:var(--text);cursor:pointer}.theme-toggle{font-size:1.2rem}.menu-toggle{display:none;font-size:1.3rem}.language-switcher{display:flex;gap:5px;align-items:center;font-size:.72rem;color:var(--muted)}.lang-button{padding:3px 2px;color:var(--muted);font-size:.72rem;font-weight:700}.lang-button.active{color:var(--accent)}.hero{min-height:680px;display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;padding-top:65px}.eyebrow{color:var(--accent);text-transform:uppercase;letter-spacing:.13em;font-size:.7rem;font-weight:750;margin:0 0 20px}.status-dot{display:inline-block;width:7px;height:7px;background:var(--accent);border-radius:50%;margin-right:7px;box-shadow:0 0 0 5px #b6e36b1c}.hero h1,.section h2,.contact-section h2{font-size:clamp(2.7rem,6vw,5.25rem);line-height:1.04;letter-spacing:-.065em;margin:0 0 24px;font-weight:650}.hero h1 em,.section h2 em,.contact-section h2 em{font-style:normal;color:var(--accent)}.hero-text{font-size:1.06rem;max-width:590px;color:var(--muted);margin:0 0 31px}.actions{display:flex;gap:12px;flex-wrap:wrap}.button{padding:12px 18px;border-radius:9px;font-size:.85rem;font-weight:700;transition:.2s}.button:hover{transform:translateY(-2px)}.primary{background:var(--accent);color:#17200f}.secondary{border:1px solid var(--line)}.stats{display:flex;gap:35px;margin-top:64px}.stats div{display:flex;gap:11px;align-items:center}.stats strong{font-size:1.4rem;color:var(--accent)}.stats span{font-size:.68rem;line-height:1.35;color:var(--muted)}.hero-visual{min-height:460px;position:relative;display:grid;place-items:center}.orb{position:absolute;width:390px;height:390px;border-radius:50%;background:radial-gradient(circle at 50% 50%,#38bdf822 0 12%,transparent 13%),radial-gradient(circle at 30% 25%,#22d3ee33,transparent 32%),linear-gradient(145deg,#17304a,#0B1220 65%);box-shadow:0 0 110px #38bdf826,inset 0 0 80px #38bdf812;border:1px solid #38bdf833}.orb:after{content:"";position:absolute;inset:11%;border:1px solid #38bdf844;border-radius:50%;transform:rotate(35deg) scaleY(.62);box-shadow:0 0 0 32px #38bdf80b,0 0 0 64px #38bdf808}.technical-card{position:relative;width:225px;padding:25px;background:#111C2Eeb;border:1px solid #ffffff25;border-radius:14px;box-shadow:0 20px 50px #02061799;transform:translate(35px,15px)}.technical-card strong{display:block;font-size:1.8rem;line-height:1.05;margin:13px 0}.card-label,.project-type{color:var(--accent);font-size:.64rem;text-transform:uppercase;letter-spacing:.12em}.technical-card small{color:#B6C2D1;font-size:.73rem}.line{height:1px;background:var(--accent);opacity:.5;margin:17px 0}.coordinate{position:absolute;right:0;bottom:35px;color:var(--muted);font-size:.65rem;letter-spacing:.1em}.section{padding:120px 0}.section-heading{margin-bottom:55px}.section h2{font-size:clamp(2.1rem,4.5vw,3.9rem);margin:0}.about-grid{display:grid;grid-template-columns:1fr .75fr;gap:100px}.about-grid p{color:var(--muted);max-width:620px}.about-grid .large-copy{color:var(--text);font-size:1.35rem;line-height:1.45}.profile-card{border:1px solid var(--line);border-radius:var(--radius);padding:25px;display:grid;grid-template-columns:70px 1fr;gap:21px 15px;align-items:center;background:linear-gradient(140deg,var(--surface),transparent)}.avatar{width:65px;height:65px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#17200f;font-size:1.2rem;font-weight:800;grid-row:span 2}.profile-card span,.education-grid span{display:block;color:var(--muted);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em}.profile-card strong{font-size:.88rem}.skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.skills-grid article{padding:28px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);transition:.25s}.skills-grid article:hover,.project:hover,.education-grid article:hover{border-color:#b6e36b66;transform:translateY(-3px)}.skill-icon{color:var(--accent);font-size:1.8rem}.skills-grid h3{font-size:1.05rem;margin:12px 0 17px}.pills{display:flex;gap:7px;flex-wrap:wrap}.pills span{font-size:.68rem;padding:4px 9px;border:1px solid var(--line);border-radius:30px;color:var(--muted)}.timeline{border-left:1px solid var(--line);margin-left:150px}.timeline article{position:relative;padding:0 0 48px 40px}.timeline article:last-child{padding-bottom:0}.timeline .date{position:absolute;right:calc(100% + 40px);width:110px;text-align:right;color:var(--muted);font-size:.72rem}.marker{position:absolute;width:9px;height:9px;border:2px solid var(--accent);border-radius:50%;background:var(--bg);left:-5px;top:5px}.timeline h3{font-size:1.16rem;margin:0}.timeline h3 small{font-weight:400;color:var(--muted)}.timeline h4{font-size:.78rem;color:var(--accent);font-weight:500;margin:4px 0 12px}.timeline p{color:var(--muted);font-size:.88rem;max-width:650px;margin:0}.project-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:15px}.project{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);overflow:hidden;transition:.25s}.project.flagship{grid-row:span 2}.project-visual{height:220px;background:var(--surface2);display:flex;align-items:center;justify-content:center;gap:15px;color:var(--accent);font-size:.72rem;letter-spacing:.1em}.project.flagship .project-visual{height:280px}.project-visual i{font-style:normal;font-size:1.6rem;color:var(--muted)}.flow{background:radial-gradient(circle,#38bdf82e 1px,transparent 1px),var(--surface2);background-size:18px 18px}.control{gap:8px;align-items:flex-end}.control span{border:1px solid var(--accent);padding:12px 8px;writing-mode:vertical-rl}.extrusion{font-size:.58rem}.project-content{padding:23px}.project h3{font-size:1.2rem;margin:10px 0}.project p{font-size:.82rem;color:var(--muted);margin:0 0 18px}.education-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.education-grid article{padding:27px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);transition:.25s}.education-grid h3{font-size:1.15rem;line-height:1.25;margin:17px 0 12px}.education-grid p,.education-grid small{color:var(--muted);font-size:.8rem}.education-grid small{display:block;margin-top:20px}.award{background:linear-gradient(140deg,#12314a,var(--surface))!important}.contact-section{padding:105px 0;background:linear-gradient(120deg,#102B43,#0B1220 62%);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.contact-inner{display:grid;grid-template-columns:1fr .8fr;gap:80px;align-items:center}.contact-section h2{font-size:clamp(2.3rem,5vw,4.4rem)}.contact-section p:not(.eyebrow){color:var(--muted);max-width:490px}.contact-cards{display:grid;gap:12px}.contact-cards>a,.contact-card{display:flex;align-items:center;gap:15px;padding:19px;border:1px solid #ffffff20;background:#11181499;border-radius:13px}.contact-cards>a>span,.contact-card>span{color:var(--accent);font-size:1.4rem}.contact-cards small{display:block;color:var(--muted);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em}.contact-cards strong{font-size:.82rem}.contact-cards b{margin-left:auto;color:var(--accent)}.footer{display:flex;justify-content:space-between;align-items:center;padding:25px 0;color:var(--muted);font-size:.72rem}.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}@media(max-width:800px){.container{width:min(calc(100% - 32px),var(--max))}.nav-links{display:none;position:absolute;top:76px;left:0;right:0;padding:20px 16px;background:var(--surface);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.nav-links.open{display:flex}.menu-toggle{display:block}.hero{grid-template-columns:1fr;padding-top:55px;min-height:auto}.hero-visual{min-height:340px}.orb{width:280px;height:280px}.stats{margin-top:45px;gap:15px}.about-grid,.contact-inner{grid-template-columns:1fr;gap:35px}.timeline{margin-left:12px}.timeline article{padding-left:28px}.timeline .date{position:static;width:auto;text-align:left;margin-bottom:8px}.timeline .marker{top:34px}.project-grid,.education-grid{grid-template-columns:1fr}.project.flagship{grid-row:auto}.section{padding:82px 0}.section-heading{margin-bottom:35px}.contact-inner{gap:25px}.footer{gap:15px;flex-wrap:wrap}}@media(prefers-reduced-motion:reduce){*,html{scroll-behavior:auto!important;transition:none!important}.reveal{opacity:1;transform:none}}[data-theme=light]{--bg:#F8FAFC;--surface:#FFFFFF;--surface2:#F1F5F9;--text:#0F172A;--muted:#475569;--line:#E2E8F0;--accent:#2563EB;--accent2:#06B6D4}[data-theme=light] .site-header{background:#F8FAFCdd}[data-theme=light] .technical-card{background:#ffffffee;color:var(--text)}
 
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        line-height: 1.6;
-        background: #f4f6f9;
-        color: #333;
-    }
-
-    header {
-        background: linear-gradient(135deg, #0d47a1, #1976d2);
-        color: white;
-        text-align: center;
-        padding: 80px 20px;
-    }
-
-    header h1 {
-        font-size: 3rem;
-        margin-bottom: 10px;
-    }
-
-    header p {
-        font-size: 1.2rem;
-    }
-
-    nav {
-        background: #fff;
-        position: sticky;
-        top: 0;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    nav ul {
-        display: flex;
-        justify-content: center;
-        list-style: none;
-    }
-
-    nav ul li {
-        margin: 15px;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: #1976d2;
-        font-weight: bold;
-    }
-
-    section {
-        max-width: 1100px;
-        margin: auto;
-        padding: 60px 20px;
-    }
-
-    h2 {
-        margin-bottom: 20px;
-        color: #0d47a1;
-    }
-
-    .skills {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .skill {
-        background: #1976d2;
-        color: white;
-        padding: 10px 15px;
-        border-radius: 20px;
-    }
-
-    .projects {
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-        gap: 20px;
-    }
-
-    .project {
-        background: white;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    }
-
-    .project h3 {
-        color: #1976d2;
-    }
-
-    .btn {
-        display: inline-block;
-        margin-top: 15px;
-        background: #1976d2;
-        color: white;
-        padding: 10px 18px;
-        border-radius: 5px;
-        text-decoration: none;
-    }
-
-    footer {
-        text-align: center;
-        background: #0d47a1;
-        color: white;
-        padding: 25px;
-    }
+.data-network{position:absolute;inset:8%;border:1px solid #38bdf81f;border-radius:50%;transform:rotate(-18deg)}
+.data-network:before,.data-network:after{content:"";position:absolute;inset:18%;border:1px dashed #22d3ee2e;border-radius:50%}
+.data-network:after{inset:36%;border-style:solid;border-color:#38bdf833}
+.kpi-chip{display:inline-flex;align-items:center;gap:7px;margin-top:12px;padding:5px 9px;border:1px solid #38bdf82e;border-radius:999px;color:#BAE6FD;font-size:.65rem;background:#38bdf80d}
+.kpi-chip:before{content:"";width:6px;height:6px;border-radius:50%;background:#34D399;box-shadow:0 0 0 4px #34d39914}
+.project-visual{position:relative}.project-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 49.5%,#38bdf80a 50%,transparent 50.5%);pointer-events:none}
+.brand b{letter-spacing:-.02em}.primary{box-shadow:0 8px 25px #38bdf81c}.secondary:hover{border-color:#38bdf866;background:#38bdf80a}
 </style>
 </head>
-
 <body>
-
-<header>
-    <h1>Vikas Kumar</h1>
-    <p>Data Analyst | BI Developer | Data Engineer</p>
-    <p>Power BI • Microsoft Fabric • PySpark • SQL</p>
-</header>
-
-<nav>
-    <ul>
-        <li>#aboutAbout</a></li>
-        <li>#skillsSkills</a></li>
-        <li>#projectsProjects</a></li>
-        <li>#contactContact</a></li>
-    </ul>
-</nav>
-
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        Data Analyst and Data Engineer based in Germany with experience
-        in Power BI, Microsoft Fabric, PySpark, SQL and HR Analytics.
-        I specialize in building automated reporting solutions,
-        scalable data pipelines, and executive dashboards that help
-        organizations make data-driven decisions.
-    </p>
-</section>
-
-<section id="skills">
-    <h2>Skills</h2>
-
-    <div class="skills">
-        <div class="skill">Power BI</div>
-        <div class="skill">Microsoft Fabric</div>
-        <div class="skill">PySpark</div>
-        <div class="skill">SQL</div>
-        <div class="skill">DAX</div>
-        <div class="skill">Python</div>
-        <div class="skill">Data Engineering</div>
-        <div class="skill">ETL Pipelines</div>
-        <div class="skill">Azure</div>
-        <div class="skill">Databricks</div>
-    </div>
-</section>
-
-<section id="projects">
-    <h2>Featured Projects</h2>
-
-    <div class="projects">
-
-        <div class="project">
-            <h3>Management Dashboard</h3>
-            <p>
-                Executive Power BI dashboard for management reporting,
-                KPI monitoring and operational insights.
-            </p>
-            #View Project</a>
-        </div>
-
-        <div class="project">
-            <h3>HR Analytics Platform</h3>
-            <p>
-                Automated Microsoft Fabric solution for headcount, FTE,
-                entries, exits and workforce analytics.
-            </p>
-            #View Project</a>
-        </div>
-
-        <div class="project">
-            <h3>Procurement Analytics</h3>
-            <p>
-                End-to-end data pipeline combining data from multiple
-                SharePoint sources into a single reporting layer.
-            </p>
-            #View Project</a>
-        </div>
-
-    </div>
-</section>
-
-<section id="contact">
-    <h2>Contact</h2>
-
-    <p><strong>Email:</strong> your.email@gmail.com</p>
-    <p><strong>LinkedIn:</strong> https://linkedin.com/in/yourprofile</p>
-    <p><strong>GitHub:</strong> https://github.com/yourgithub</p>
-</section>
-
-<footer>
-    <p>© 2026 Vikas Kumar | Data Portfolio</p>
-</footer>
-
+<header class="site-header" id="top"><nav class="nav container" aria-label="Main navigation"><a class="brand" href="#top" aria-label="Vikas Kumar home"><span>VK</span><b>Vikas Kumar</b></a><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button><div class="nav-links"><a href="#about" data-i18n="nav.about">About</a><a href="#skills" data-i18n="nav.skills">Skills</a><a href="#experience" data-i18n="nav.experience">Experience</a><a href="#projects" data-i18n="nav.projects">Projects</a><a href="#contact" data-i18n="nav.contact">Contact</a><div class="language-switcher" aria-label="Language selector"><button class="lang-button active" data-lang="en">EN</button><span>/</span><button class="lang-button" data-lang="de">DE</button></div><button class="theme-toggle" type="button" aria-label="Toggle colour theme">☼</button></div></nav></header>
+<main>
+<section class="hero container reveal"><div class="hero-copy"><p class="eyebrow"><span class="status-dot"></span><span data-i18n="hero.eyebrow">Data Analytics · Business Intelligence · Data Engineering · Bochum, Germany</span></p><h1 data-i18n="hero.title">Turning business data into <em>clear decisions.</em></h1><p class="hero-text" data-i18n="hero.text">I build reliable data solutions—from source integration and ETL/ELT pipelines to interactive Power BI dashboards—with a practical focus on automation, transparency and business value.</p><div class="actions"><a class="button primary" href="#projects" data-i18n="hero.cta1">Explore my work <span>↗</span></a><a class="button secondary" href="mailto:YOUR_EMAIL@example.com" data-i18n="hero.cta2">Get in touch</a></div><div class="stats"><div><strong>3+</strong><span data-i18n="stats.years">years in BI &<br>data analytics</span></div><div><strong>13</strong><span data-i18n="stats.cad">interactive Power BI<br>dashboards</span></div><div><strong>~2 days → 1h</strong><span data-i18n="stats.size">reporting time<br>reduced</span></div></div></div><div class="hero-visual"><div class="orb"><div class="data-network"></div></div><div class="technical-card"><span class="card-label" data-i18n="focus.label">CURRENT FOCUS</span><strong data-i18n="focus.title">BI & Data<br>Engineering</strong><div class="line"></div><small data-i18n="focus.text">Data integration<br>· Automation<br>· Business insights</small><span class="kpi-chip">DATA → INSIGHT</span></div><div class="coordinate">51.4818° N<br>7.2162° E</div></div></section>
+<section class="section container reveal" id="about"><div class="section-heading"><p class="eyebrow">01 / <span data-i18n="sections.about">About</span></p><h2 data-i18n="about.title">From raw data<br>to <em>business impact.</em></h2></div><div class="about-grid"><div><p class="large-copy" data-i18n="about.p1">I’m a Data Analyst working at the intersection of business intelligence, data integration and decision support.</p><p data-i18n="about.p2">I have experience building Power BI dashboards, integrating SAP, SharePoint, Outlook, LOGA and ERP data, developing ETL/ELT workflows, and translating stakeholder requirements into scalable reporting solutions.</p><p data-i18n="about.p3">I hold a Master’s degree in Data Science from TU Dortmund, with a thesis on test-time training for anomaly detection in time series. I’m particularly interested in BI, data engineering, cloud data platforms and AI-assisted analytics.</p></div><div class="profile-card"><div class="avatar">CG</div><div><span data-i18n="profile.based">Based in</span><strong>Bochum, Germany</strong></div><div><span data-i18n="profile.languages">Languages</span><strong data-i18n="profile.languageValue">German B2/C1 · English fluent · Hindi fluent</strong></div><div><span data-i18n="profile.approach">Approach</span><strong data-i18n="profile.approachValue">Analytical · Structured · Curious</strong></div></div></div></section>
+<section class="section container reveal" id="skills"><div class="section-heading"><p class="eyebrow">02 / <span data-i18n="sections.skills">Capabilities</span></p><h2 data-i18n="skills.title">Tools for turning<br>data into <em>decisions.</em></h2></div><div class="skills-grid"><article><span class="skill-icon">⌘</span><h3 data-i18n="skills.cadTitle">Business Intelligence</h3><div class="pills"><span>Power BI</span><span>DAX</span><span>Power Query</span><span>Data Modeling</span><span>Dashboard Design</span><span>Reporting</span></div></article><article><span class="skill-icon">◇</span><h3 data-i18n="skills.processTitle">Data Engineering & ETL</h3><div class="pills"><span>SQL</span><span>Python</span><span>Databricks</span><span>PySpark</span><span>ETL / ELT</span><span>Data Warehousing</span></span></div></article><article><span class="skill-icon">∿</span><h3 data-i18n="skills.simTitle">Cloud & Data Platforms</h3><div class="pills"><span>Microsoft Fabric</span><span>Azure</span><span>Azure Data Factory</span><span>Lakehouse</span><span>BigQuery</span><span>OneLake</span></div></article><article><span class="skill-icon">▤</span><h3 data-i18n="skills.qualityTitle">Automation & Collaboration</h3><div class="pills"><span data-i18n="skills.sops">Power Automate</span><span>SharePoint</span><span>Outlook</span><span>Copilot / AI</span><span>Documentation</span><span>Excel</span></div></article></div></section>
+<section class="section container reveal" id="experience"><div class="section-heading"><p class="eyebrow">03 / <span data-i18n="sections.experience">Experience</span></p><h2 data-i18n="experience.title">Building, automating and improving<br><em>data-driven solutions.</em></h2></div><div class="timeline"><article><div class="date">05/2025 — <span data-i18n="common.present">Present</span></div><div class="marker"></div><div><h3 data-i18n="exp.mechaTitle">Data Analyst <small>· Full-time</small></h3><h4>Apleona Wolfferts GmbH · Germany</h4><p data-i18n="exp.mechaText">Developing and maintaining Power BI dashboards, analysing business data, supporting stakeholders with ad-hoc analysis, integrating data sources and improving reporting processes through automation.</p></div></article><article><div class="date">10/2024 — 04/2025</div><div class="marker"></div><div><h3 data-i18n="exp.tuTitle">Werkstudent Data Analyst <small>· Part-time</small></h3><h4>Picnic GmbH · Data Analytics</h4><p data-i18n="exp.tuText">Worked with GCP and BigQuery to analyse data, support reporting and develop data-driven solutions in a fast-paced environment.</p></div></article><article><div class="date">09/2022 — 09/2025</div><div class="marker"></div><div><h3 data-i18n="exp.elsTitle">Master of Science — Data Science</h3><h4>TU Dortmund · Dortmund, Germany</h4><p data-i18n="exp.elsText">Master’s thesis: “Test-Time Training of Anomaly Detection in Time Series”. Final thesis grade: 1.3. Focus on machine learning, data analysis and time-series anomaly detection.</p></div></article><article><div class="date">10/2024 — 04/2025</div><div class="marker"></div><div><h3 data-i18n="exp.atomTitle">Werkstudent Data Analyst</h3><h4>Picnic GmbH · Germany</h4><p data-i18n="exp.atomText">Analysed operational data using SQL, Python and BigQuery and supported business reporting and data-driven decision-making.</p></div></article><article><div class="date">Bachelor / earlier experience</div><div class="marker"></div><div><h3 data-i18n="exp.glenTitle">Computer Science & Data Background</h3><h4>Bachelor’s degree in Computer Science · India</h4><p data-i18n="exp.glenText">Strong foundation in computer science, programming and data-oriented problem solving, complemented by professional experience in BI and analytics.</p></div></article></div></section>
+<section class="section container reveal" id="projects"><div class="section-heading"><p class="eyebrow">04 / <span data-i18n="sections.projects">Selected work</span></p><h2 data-i18n="projects.title">Data problems,<br><em>made useful.</em></h2></div><div class="project-grid"><article class="project flagship"><div class="project-visual flow"><span>SAP</span><i>→</i><span>Power BI</span></div><div class="project-content"><span class="project-type" data-i18n="projects.apiType">BI automation · Apleona</span><h3 data-i18n="projects.apiTitle">Automated enterprise reporting</h3><p data-i18n="projects.apiText">Integrated SharePoint, Outlook, SAP, LOGA and other ERP data sources into reporting workflows. Automated 10+ dashboards and reduced preparation time for one cockpit dashboard from around two working days to about one hour.</p><div class="pills"><span>Power BI</span><span>Power Query</span><span>SAP</span></div></div></article><article class="project"><div class="project-visual control"><span>u(t)</span><span>x(t+1)</span><span>MPC</span></div><div class="project-content"><span class="project-type" data-i18n="projects.mpcType">Data analytics · Current</span><h3 data-i18n="projects.mpcTitle">Power BI dashboards & KPI reporting</h3><p data-i18n="projects.mpcText">Designed, developed and maintained 13 interactive Power BI dashboards, including 8 new enterprise dashboards, with KPI reporting and stakeholder-focused visualisation.</p><div class="pills"><span>Power BI</span><span>DAX</span></div></div></article><article class="project"><div class="project-visual extrusion"><span data-i18n="projects.feed">FEED</span><i>→</i><span data-i18n="projects.extrude">EXTRUDE</span><i>→</i><span data-i18n="projects.test">TEST</span></div><div class="project-content"><span class="project-type" data-i18n="projects.extrusionType">Data engineering · Current</span><h3 data-i18n="projects.extrusionTitle">Data integration & ETL/ELT</h3><p data-i18n="projects.extrusionText">Building and improving data pipelines, integrating multiple business sources and working with modern Microsoft data-platform concepts including Fabric, Lakehouse and Dataflows Gen2.</p><div class="pills"><span>SQL</span><span>Python</span><span>Databricks</span></div></div></article></div></section>
+<section class="section container reveal" id="education"><div class="section-heading"><p class="eyebrow">05 / <span data-i18n="sections.education">Education</span></p><h2 data-i18n="education.title">Strong foundations,<br><em>applied to real data.</em></h2></div><div class="education-grid"><article><span>2022 — <span data-i18n="common.present">Present</span></span><h3 data-i18n="education.master">Master of Science<br>Data Science</h3><p>Technische Universität Dortmund, Germany</p><small data-i18n="education.masterFocus">Machine Learning · Data Analysis · Time Series · Python · Statistics</small></article><article><span>2015 — 2019</span><h3 data-i18n="education.bachelor">Bachelor of Science<br>Computer Science</h3><p>University in India</p><small data-i18n="education.bachelorFocus">Programming · Algorithms · Databases · Software Engineering</small></article><article class="award"><span>09/2025</span><h3 data-i18n="education.scholarship">Selected achievement</h3><p>Master’s thesis graded 1.3 · Published research papers</p><small data-i18n="education.scholarshipText">Research & academic achievement</small></article></div></section>
+<section class="contact-section reveal" id="contact"><div class="container contact-inner"><div><p class="eyebrow">06 / <span data-i18n="sections.contact">Contact</span></p><h2 data-i18n="contact.title">Let’s turn your data into<br><em>business value.</em></h2><p data-i18n="contact.text">For opportunities in Data Analytics, Business Intelligence or Data Engineering, I’d be happy to discuss how I can contribute.</p></div><div class="contact-cards"><a href="mailto:YOUR_EMAIL@example.com"><span>✉</span><div><small data-i18n="contact.email">Email</small><strong>YOUR_EMAIL@example.com</strong></div><b>↗</b></a><div class="contact-card"><span>⌖</span><div><small data-i18n="contact.location">Location</small><strong>Bochum, Germany</strong></div></div></div></div></section>
+</main><footer class="footer container"><span>© 2026 Vikas Kumar</span><span data-i18n="footer.tagline">Data · BI · Engineering</span><a href="#top" data-i18n="footer.top">Back to top ↑</a></footer>
+<script>
+const root=document.documentElement,header=document.querySelector('.site-header'),themeToggle=document.querySelector('.theme-toggle'),menuToggle=document.querySelector('.menu-toggle'),navLinks=document.querySelector('.nav-links'),langButtons=document.querySelectorAll('.lang-button');
+const T={en:{
+'nav.about':'About','nav.skills':'Skills','nav.experience':'Experience','nav.projects':'Projects','nav.contact':'Contact',
+'hero.eyebrow':'Data Analytics · Business Intelligence · Data Engineering · Bochum, Germany',
+'hero.title':'Turning business data into <em>clear decisions.</em>',
+'hero.text':'I build reliable data solutions—from source integration and ETL/ELT pipelines to interactive Power BI dashboards—with a practical focus on automation, transparency and business value.',
+'hero.cta1':'Explore my work <span>↗</span>','hero.cta2':'Get in touch',
+'stats.years':'years in BI &<br>data analytics','stats.cad':'interactive Power BI<br>dashboards','stats.size':'reporting time<br>reduced',
+'focus.label':'CURRENT FOCUS','focus.title':'BI & Data<br>Engineering','focus.text':'Data integration<br>· Automation<br>· Business insights',
+'sections.about':'About','sections.skills':'Capabilities','sections.experience':'Experience','sections.projects':'Selected work','sections.education':'Education','sections.contact':'Contact',
+'about.title':'From raw data<br>to <em>business impact.</em>',
+'about.p1':'I’m a Data Analyst working at the intersection of business intelligence, data integration and decision support.',
+'about.p2':'I have experience building Power BI dashboards, integrating SAP, SharePoint, Outlook, LOGA and ERP data, developing ETL/ELT workflows, and translating stakeholder requirements into scalable reporting solutions.',
+'about.p3':'I hold a Master’s degree in Data Science from TU Dortmund, with a thesis on test-time training for anomaly detection in time series. I’m particularly interested in BI, data engineering, cloud data platforms and AI-assisted analytics.',
+'profile.based':'Based in','profile.languages':'Languages','profile.languageValue':'German B2/C1 · English fluent · Hindi fluent','profile.approach':'Approach','profile.approachValue':'Analytical · Structured · Curious',
+'skills.title':'Tools for turning<br>data into <em>decisions.</em>',
+'skills.cadTitle':'Business Intelligence','skills.technical':'Dashboard Design','skills.prototyping':'Reporting',
+'skills.processTitle':'Data Engineering & ETL','skills.polymer':'Data Warehousing','skills.validation':'ETL / ELT','skills.plant':'Data Modeling',
+'skills.simTitle':'Cloud & Data Platforms','skills.qualityTitle':'Automation & Collaboration',
+'skills.sops':'Documentation','skills.risk':'Data Quality','skills.specs':'Process Standards','skills.tests':'Testing',
+'experience.title':'Building, automating and improving<br><em>data-driven solutions.</em>','common.present':'Present',
+'exp.mechaTitle':'Data Analyst <small>· Full-time</small>','exp.mechaText':'Developing and maintaining Power BI dashboards, analysing business data, supporting stakeholders with ad-hoc analysis, integrating data sources and improving reporting processes through automation.',
+'exp.tuTitle':'Werkstudent Data Analyst <small>· Part-time</small>','exp.tuText':'Worked with GCP and BigQuery to analyse data, support reporting and develop data-driven solutions in a fast-paced environment.',
+'exp.elsTitle':'Master of Science — Data Science','exp.elsText':'Master’s thesis: “Test-Time Training of Anomaly Detection in Time Series”. Final thesis grade: 1.3. Focus on machine learning, data analysis and time-series anomaly detection.',
+'exp.atomTitle':'Werkstudent Data Analyst','exp.atomText':'Analysed operational data using SQL, Python and BigQuery and supported business reporting and data-driven decision-making.',
+'exp.glenTitle':'Computer Science & Data Background','exp.glenText':'Strong foundation in computer science, programming and data-oriented problem solving, complemented by professional experience in BI and analytics.',
+'projects.title':'Data problems,<br><em>made useful.</em>',
+'projects.apiType':'BI automation · Apleona','projects.apiTitle':'Automated enterprise reporting','projects.apiText':'Integrated SharePoint, Outlook, SAP, LOGA and other ERP data sources into reporting workflows. Automated 10+ dashboards and reduced preparation time for one cockpit dashboard from around two working days to about one hour.','projects.safety':'Data quality',
+'projects.mpcType':'Data analytics · Current','projects.mpcTitle':'Power BI dashboards & KPI reporting','projects.mpcText':'Designed, developed and maintained 13 interactive Power BI dashboards, including 8 new enterprise dashboards, with KPI reporting and stakeholder-focused visualisation.',
+'projects.feed':'SOURCE','projects.extrude':'TRANSFORM','projects.test':'REPORT','projects.extrusionType':'Data engineering · Current','projects.extrusionTitle':'Data integration & ETL/ELT','projects.extrusionText':'Building and improving data pipelines, integrating multiple business sources and working with modern Microsoft data-platform concepts including Fabric, Lakehouse and Dataflows Gen2.',
+'education.title':'Strong foundations,<br><em>applied to real data.</em>','education.master':'Master of Science<br>Data Science','education.masterFocus':'Machine Learning · Data Analysis · Time Series · Python · Statistics',
+'education.bachelor':'Bachelor of Science<br>Computer Science','education.bachelorFocus':'Programming · Algorithms · Databases · Software Engineering',
+'education.scholarship':'Selected achievement','education.scholarshipText':'Master’s thesis graded 1.3 · Published research papers',
+'contact.title':'Let’s turn your data into<br><em>business value.</em>','contact.text':'For opportunities in Data Analytics, Business Intelligence or Data Engineering, I’d be happy to discuss how I can contribute.',
+'contact.email':'Email','contact.location':'Location','footer.tagline':'Data · BI · Engineering','footer.top':'Back to top ↑'
+},de:{
+'nav.about':'Über mich','nav.skills':'Fähigkeiten','nav.experience':'Erfahrung','nav.projects':'Projekte','nav.contact':'Kontakt',
+'hero.eyebrow':'Datenanalyse · Business Intelligence · Data Engineering · Bochum, Deutschland',
+'hero.title':'Aus Geschäftsdaten werden <em>klare Entscheidungen.</em>',
+'hero.text':'Ich entwickle zuverlässige Datenlösungen – von Datenintegration und ETL/ELT-Pipelines bis zu interaktiven Power-BI-Dashboards – mit Fokus auf Automatisierung, Transparenz und Business Value.',
+'hero.cta1':'Meine Projekte ansehen <span>↗</span>','hero.cta2':'Kontakt aufnehmen',
+'stats.years':'Jahre BI &<br>Datenanalyse','stats.cad':'interaktive Power-BI-<br>Dashboards','stats.size':'Reporting-Zeit<br>reduziert',
+'focus.label':'AKTUELLER FOKUS','focus.title':'BI & Data<br>Engineering','focus.text':'Datenintegration<br>· Automatisierung<br>· Business Insights',
+'sections.about':'Über mich','sections.skills':'Fähigkeiten','sections.experience':'Berufserfahrung','sections.projects':'Ausgewählte Projekte','sections.education':'Ausbildung','sections.contact':'Kontakt',
+'about.title':'Von Rohdaten<br>zu <em>Business Impact.</em>',
+'about.p1':'Ich bin Data Analyst an der Schnittstelle von Business Intelligence, Datenintegration und datenbasierter Entscheidungsunterstützung.',
+'about.p2':'Ich habe Erfahrung mit Power-BI-Dashboards, der Integration von SAP, SharePoint, Outlook, LOGA und ERP-Daten, ETL/ELT-Workflows sowie der Umsetzung von Stakeholder-Anforderungen in skalierbare Reporting-Lösungen.',
+'about.p3':'Ich habe einen Masterabschluss in Data Science an der TU Dortmund. Meine Masterarbeit beschäftigte sich mit Test-Time Training für Anomalieerkennung in Zeitreihen. Besonders interessiere ich mich für BI, Data Engineering, Cloud-Datenplattformen und KI-gestützte Analysen.',
+'profile.based':'Standort','profile.languages':'Sprachen','profile.languageValue':'Deutsch B2/C1 · Englisch fließend · Hindi fließend','profile.approach':'Arbeitsweise','profile.approachValue':'Analytisch · Strukturiert · Neugierig',
+'skills.title':'Werkzeuge, die Daten<br>in <em>Entscheidungen verwandeln.</em>',
+'skills.cadTitle':'Business Intelligence','skills.technical':'Dashboard Design','skills.prototyping':'Reporting',
+'skills.processTitle':'Data Engineering & ETL','skills.polymer':'Data Warehousing','skills.validation':'ETL / ELT','skills.plant':'Datenmodellierung',
+'skills.simTitle':'Cloud & Data Platforms','skills.qualityTitle':'Automatisierung & Zusammenarbeit',
+'skills.sops':'Dokumentation','skills.risk':'Datenqualität','skills.specs':'Prozessstandards','skills.tests':'Testing',
+'experience.title':'Datenlösungen entwickeln,<br><em>automatisieren und verbessern.</em>','common.present':'Heute',
+'exp.mechaTitle':'Data Analyst <small>· Vollzeit</small>','exp.mechaText':'Entwicklung und Pflege von Power-BI-Dashboards, Analyse von Geschäftsdaten, Unterstützung der Stakeholder bei Ad-hoc-Analysen, Integration verschiedener Datenquellen und Automatisierung von Reporting-Prozessen.',
+'exp.tuTitle':'Werkstudent Data Analyst <small>· Teilzeit</small>','exp.tuText':'Arbeit mit GCP und BigQuery zur Datenanalyse, Unterstützung von Reports und Entwicklung datenbasierter Lösungen.',
+'exp.elsTitle':'Master of Science — Data Science','exp.elsText':'Masterarbeit: „Test-Time Training of Anomaly Detection in Time Series“. Abschlussnote 1,3. Schwerpunkte: Machine Learning, Datenanalyse und Anomalieerkennung in Zeitreihen.',
+'exp.atomTitle':'Werkstudent Data Analyst','exp.atomText':'Analyse operativer Daten mit SQL, Python und BigQuery sowie Unterstützung von Business Reporting und datenbasierten Entscheidungen.',
+'exp.glenTitle':'Computer-Science- & Data-Hintergrund','exp.glenText':'Fundierte Kenntnisse in Informatik, Programmierung und datenorientierter Problemlösung, ergänzt durch Berufserfahrung in BI und Analytics.',
+'projects.title':'Datenprobleme,<br><em>praktisch gelöst.</em>',
+'projects.apiType':'BI-Automatisierung · Apleona','projects.apiTitle':'Automatisiertes Enterprise Reporting','projects.apiText':'Integration von SharePoint, Outlook, SAP, LOGA und weiteren ERP-Datenquellen in Reporting-Workflows. Automatisierung von mehr als 10 Dashboards und Reduzierung der Vorbereitungszeit eines Cockpit-Dashboards von etwa zwei Arbeitstagen auf ungefähr eine Stunde.','projects.safety':'Datenqualität',
+'projects.mpcType':'Datenanalyse · Aktuell','projects.mpcTitle':'Power-BI-Dashboards & KPI-Reporting','projects.mpcText':'Entwicklung, Pflege und Weiterentwicklung von 13 interaktiven Power-BI-Dashboards, darunter 8 neue Enterprise-Dashboards, für KPI-Reporting und Stakeholder.',
+'projects.feed':'QUELLE','projects.extrude':'TRANSFORM','projects.test':'REPORT','projects.extrusionType':'Data Engineering · Aktuell','projects.extrusionTitle':'Datenintegration & ETL/ELT','projects.extrusionText':'Aufbau und Verbesserung von Datenpipelines, Integration verschiedener Business-Datenquellen und Arbeit mit modernen Microsoft-Datenplattformen wie Fabric, Lakehouse und Dataflows Gen2.',
+'education.title':'Starke Grundlagen,<br><em>praxisnah angewendet.</em>','education.master':'Master of Science<br>Data Science','education.masterFocus':'Machine Learning · Datenanalyse · Zeitreihen · Python · Statistik',
+'education.bachelor':'Bachelor of Science<br>Computer Science','education.bachelorFocus':'Programmierung · Algorithmen · Datenbanken · Software Engineering',
+'education.scholarship':'Ausgewählte Leistung','education.scholarshipText':'Masterarbeit Note 1,3 · Veröffentlichte Forschungsarbeiten',
+'contact.title':'Lassen Sie uns Daten in<br><em>Business Value verwandeln.</em>','contact.text':'Für Positionen in Data Analytics, Business Intelligence oder Data Engineering freue ich mich über ein Gespräch darüber, wie ich Ihr Team unterstützen kann.',
+'contact.email':'E-Mail','contact.location':'Standort','footer.tagline':'Daten · BI · Engineering','footer.top':'Nach oben ↑'
+}};
+function applyLanguage(lang){document.documentElement.lang=lang;document.querySelectorAll('[data-i18n]').forEach(el=>{if(T[lang][el.dataset.i18n]!==undefined)el.innerHTML=T[lang][el.dataset.i18n]});langButtons.forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));localStorage.setItem('language',lang)}applyLanguage(localStorage.getItem('language')||'en');langButtons.forEach(b=>b.addEventListener('click',()=>applyLanguage(b.dataset.lang)));
+const savedTheme=localStorage.getItem('theme');if(savedTheme)root.dataset.theme=savedTheme;function icon(){themeToggle.textContent=root.dataset.theme==='light'?'☾':'☼'}icon();themeToggle.addEventListener('click',()=>{root.dataset.theme=root.dataset.theme==='light'?'dark':'light';localStorage.setItem('theme',root.dataset.theme);icon()});menuToggle.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuToggle.setAttribute('aria-expanded',open)});navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuToggle.setAttribute('aria-expanded','false')}));const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(e=>observer.observe(e));window.addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>10),{passive:true});
+</script>
 </body>
 </html>
